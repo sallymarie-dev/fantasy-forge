@@ -7,4 +7,4 @@ class Adventurer {
     console.log(`${this.name} is scouting.... Health: ${this.health}`);
   }
 }
-export default Adventurer;
+export { Adventurer };
