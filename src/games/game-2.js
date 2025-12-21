@@ -12,7 +12,8 @@ const potion = new HealPotion("Minor Heal Potion", 30, 2);
 const invisibilityCloak = new MagicItem(
   "Invisibility Cloak",
   "Grants and stabalize invisibility",
-  1
+  1,
+   "A mystical cloak that makes the wearer invisible"
 );
 
 // Damage to the adventurer

@@ -1,10 +1,11 @@
 // class for magical items
 
 class MagicItem {
-  constructor(name, effect, charges) {
+  constructor(name, effect, charges, description = "") {
     this.name = name;
     this.effect = effect;
     this.charges = charges;
+    this.description = description;
   }
 
   use(target) {
@@ -15,7 +16,7 @@ class MagicItem {
 
     this.charges--;
     console.log(
-      `${target.name} uses ${this.name}. Effect: ${this.effect}. Charges left: ${this.charges}`
+      `${target.name} uses ${this.name}: ${this.description}. Effect: ${this.effect}. Charges left: ${this.charges}`
     );
   }
 

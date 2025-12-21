@@ -11,12 +11,14 @@ const cunningRogue = new Adventurer("Dovina", 80);
 const minorHealingPotion = new MagicItem(
   "Minor Healing Potion",
   "Heals 30 HP",
-  2
+  2,
+  "A small purple vial that restores vitality."
 );
 const strengthElixir = new MagicItem(
   "Strength Elixir",
   "Boosts attack by 20",
-  1
+  1,
+  "A glowing blue potion that strengthens your strike."
 );
 
 console.log("\n--- Initial States ---");
