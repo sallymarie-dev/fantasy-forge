@@ -1,4 +1,4 @@
-import { Adventurer } from "../models/Adventurer.js";
+import Adventurer from "../models/Adventurer.js";
 console.log("Fantasy Forge initialized!");
 const hero1 = new Adventurer("Robin", 80);
 const hero2 = new Adventurer("Lurona", 60);
