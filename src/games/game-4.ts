@@ -1,4 +1,4 @@
-import  Adventurer from "../models/Adventurer.ts";
+import  { Adventurer } from "../models/Adventurer.ts";
 import { Monster } from "../models/Monster.ts";
 
 const hero = new Adventurer("Sir Brave", 100);

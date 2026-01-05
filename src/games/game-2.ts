@@ -17,7 +17,7 @@ const invisibilityCloak = new MagicItem(
 );
 
 // Damage to the adventurer
-hero.receiveDamage(20);
+hero.takeDamage(20);
 
 // Use thr potion
 potion.use(hero);

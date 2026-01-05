@@ -3,10 +3,10 @@ console.log("Fantasy Forge initialized!");
 const hero1 = new Adventurer("Robin", 80);
 const hero2 = new Adventurer("Lurona", 60);
 //robin//
-hero1.receiveDamage(20);
+hero1.takeDamage(20);
 hero1.heal(15);
 //Lurona//
-hero2.receiveDamage(10);
+hero2.takeDamage(10);
 hero2.heal(25);
 //adventurer health record//
 console.log(`${hero1.name}'s final health: ${hero1.health}`);

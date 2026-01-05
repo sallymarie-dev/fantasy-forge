@@ -34,7 +34,7 @@ console.log(`${strengthElixir.name} Charges: ${strengthElixir.charges}`);
 console.log("\n--- Battle Start ---");
 
 // BraveHero attacks CunningRogue
-cunningRogue.receiveDamage(25);
+cunningRogue.takeDamage(25);
 console.log(`${cunningRogue.name} is hurt!`);
 
 // CunningRogue uses Healing Potion
@@ -43,7 +43,7 @@ minorHealingPotion.use(cunningRogue);
 cunningRogue.heal(30);
 
 // CunningRogue attacks BraveHero
-braveHero.receiveDamage(15);
+braveHero.takeDamage(15);
 
 // BraveHero uses Strength Elixir
 strengthElixir.use(braveHero);
@@ -51,7 +51,7 @@ strengthElixir.use(braveHero);
 console.log(`${braveHero.name}'s attack boosted by 20!`);
 
 // BraveHero attacks CunningRogue again with boost
-cunningRogue.receiveDamage(35);
+cunningRogue.takeDamage(35);
 
 // summary her
 console.log("\n--- Battle Summary ---");
