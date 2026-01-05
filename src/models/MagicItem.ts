@@ -1,14 +1,19 @@
 // class for magical items
+import Adventurer from './Adventurer';
 
-class MagicItem {
-  constructor(name, effect, charges, description = "") {
+export class MagicItem {
+  name: string;
+  effect: string;
+  charges: number;
+  description: string;
+  constructor(name:string, effect:string, charges:number, description:string = "") {
     this.name = name;
     this.effect = effect;
     this.charges = charges;
     this.description = description;
   }
 
-  use(target) {
+  use(target:Adventurer) {
     if (this.charges <= 0) {
       console.log(`${this.name} has no charges left.`);
       return;
@@ -20,7 +25,7 @@ class MagicItem {
     );
   }
 
-  recharge(amount) {
+  recharge(amount:number) {
     this.charges += amount;
     console.log(
       `${this.name} recharged by ${amount}. Total charges counting : ${this.charges}`
