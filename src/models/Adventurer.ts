@@ -1,4 +1,4 @@
-class Adventurer {
+export class Adventurer {
   name:string;
   health:number;
   constructor(name, health) {
@@ -11,11 +11,22 @@ class Adventurer {
   }
 
   // taking damage//
-  receiveDamage(amount:number) {
+  attack(target: { takeDamage: (amount: number) => void; name: string }) {
+    const damage = 20;
+    console.log(`${this.name} attacks ${target.name} for ${damage} damage!`);
+    target.takeDamage(damage);
+  }
+
+  takeDamage(amount: number) {
     this.health -= amount;
     console.log(
-      `${this.name} takes ${amount} of damage. Health is now ${this.health}`
+      `${this.name} takes ${amount} damage. Health is now ${this.health}`
     );
+
+    if (this.health <= 0) {
+      this.health = 0;
+      console.log(`${this.name} collapses!`);
+    }
   }
   //Healing//
   heal(amount:number) {

@@ -1,6 +1,6 @@
-import Adventurer from "../models/Adventurer.js";
-import HealPotion from "../models/HealPotion.js";
-import MagicItem from "../models/MagicItem.js";
+import Adventurer from "../models/Adventurer.ts";
+import HealPotion from "../models/HealPotion.ts";
+import MagicItem from "../models/MagicItem.ts";
 
 console.log("Game 2 initialized!");
 

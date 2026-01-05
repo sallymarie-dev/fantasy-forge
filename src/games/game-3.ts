@@ -1,11 +1,12 @@
-import Adventurer from "../models/Adventurer.js";
-import MagicItem from "../models/MagicItem.js";
+import Adventurer from "../models/Adventurer.ts";
+import MagicItem from "../models/MagicItem.ts";
 
 console.log("Game 3 initialized!");
 
 // Create Adventurers
 const braveHero = new Adventurer("Fluriti", 100);
 const cunningRogue = new Adventurer("Dovina", 80);
+
 
 //MagicItems
 const minorHealingPotion = new MagicItem(
