@@ -1,4 +1,6 @@
 class Adventurer {
+  name:string;
+  health:number;
   constructor(name, health) {
     this.name = name;
     this.health = health;
@@ -9,14 +11,14 @@ class Adventurer {
   }
 
   // taking damage//
-  receiveDamage(amount) {
+  receiveDamage(amount:number) {
     this.health -= amount;
     console.log(
       `${this.name} takes ${amount} of damage. Health is now ${this.health}`
     );
   }
   //Healing//
-  heal(amount) {
+  heal(amount:number) {
     this.health += amount;
     console.log(
       `${this.name} healing ${amount} points. Health is now ${this.health}`
