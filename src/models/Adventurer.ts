@@ -1,9 +1,11 @@
 export class Adventurer {
   name:string;
   health:number;
-  constructor(name, health) {
+  gold:number;
+  constructor(name:string, health:number, gold:number=50) {
     this.name = name;
     this.health = health;
+    this.gold=gold;
   }
 
   scout() {
