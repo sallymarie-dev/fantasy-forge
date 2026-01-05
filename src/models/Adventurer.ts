@@ -11,7 +11,7 @@ export class Adventurer {
   }
 
   // taking damage//
-  attack(target: { takeDamage: (amount: number) => void; name: string }) {
+  attack(target: { name: string; takeDamage: (amount: number) => void }) {
     const damage = 20;
     console.log(`${this.name} attacks ${target.name} for ${damage} damage!`);
     target.takeDamage(damage);

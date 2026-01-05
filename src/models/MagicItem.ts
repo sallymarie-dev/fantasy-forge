@@ -1,5 +1,5 @@
 // class for magical items
-import Adventurer from './Adventurer';
+import { Adventurer } from './Adventurer';
 
 export class MagicItem {
   name: string;
@@ -13,7 +13,7 @@ export class MagicItem {
     this.description = description;
   }
 
-  use(target:Adventurer) {
+  use(target:{ name:string}) {
     if (this.charges <= 0) {
       console.log(`${this.name} has no charges left.`);
       return;

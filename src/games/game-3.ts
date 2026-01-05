@@ -1,5 +1,5 @@
-import Adventurer from "../models/Adventurer.ts";
-import MagicItem from "../models/MagicItem.ts";
+import { Adventurer } from "../models/Adventurer.ts";
+import { MagicItem } from "../models/MagicItem.ts";
 
 console.log("Game 3 initialized!");
 

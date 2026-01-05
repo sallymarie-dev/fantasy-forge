@@ -1,6 +1,3 @@
-import { Adventurer } from "./Adventurer";
-
-
 export class Monster {
   name: string;
   health: number;
@@ -16,10 +13,11 @@ export class Monster {
     console.log(`${this.name} lets out a terrifying roar!`);
   }
 
-  attack(target: Adventurer) {
+   attack(target: { name: string; takeDamage: (amount: number) => void }) {
     console.log(`${this.name} bites ${target.name} for ${this.damage} damage!`);
     target.takeDamage(this.damage);
   }
+
  takeDamage(amount: number) {
     this.health -= amount;
     console.log(
